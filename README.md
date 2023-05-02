@@ -1,5 +1,1 @@
-# TEST-REPO
-
-Testing Pythonic Coding
-
-## Sub-topic
+# Pythonic Coding Examples

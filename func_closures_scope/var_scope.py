@@ -21,3 +21,31 @@ def change():
 
 change()
 print(x)
+
+####
+
+m = min([5, 1, 4, 2, 3]) # built-in func in Python
+print(m)
+
+import builtins
+print(dir(builtins))
+
+###
+# Global
+# !!! play with uncommenting of x var !!!
+
+x = 'global x'
+
+def outer():
+    x = 'outer x'
+
+    def inner(): # enclosing scope
+        nonlocal x # change the state of closures
+        x = 'inner x'
+        print(x)
+
+    inner()
+    print(x)
+
+outer()
+print(x)

@@ -1,0 +1,8 @@
+[flake8]
+# other options
+
+[flake8:local-plugins]
+extension =
+    MIK = flake8_mike:MikeASTPlugin
+paths =
+    ./
